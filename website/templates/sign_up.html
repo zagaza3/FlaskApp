@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}Jegyzetfüzet/Regisztráció{% endblock %}
+{% block content %}
+<head>
+    <style>
+        .signupdiv{
+            position: absolute;
+            top: 30%;
+            left: 47%;
+        }
+    </style>
+</head>
+<h1 class="foold" style="position: absolute; right: 35%;">Regisztrálj!</h1>
+<br>
+<div class="signupdiv">
+    <form method="post">
+        <div class="form-group">
+            <label for="email" style="color: aliceblue;">E-Mail cím</label>
+            <input 
+                type="email" 
+                class="form-control" 
+                id="email" 
+                name="email" 
+                placeholder="Add meg az E-Mail címed!"
+            />
+        </div>
+        <div class="form-group">
+            <label for="firstName" style="color: aliceblue;">Név</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                id="firstName" 
+                name="firstName" 
+                placeholder="Hogy hívnak?"
+            />
+        </div>
+        <div class="form-group">
+            <label for="password1" style="color: aliceblue;">Jelszó</label>
+            <input 
+                type="password" 
+                class="form-control" 
+                id="password1" 
+                name="password1" 
+                placeholder="Találj ki egy jelszót!"
+            />
+        </div>
+        <div class="form-group">
+            <label for="password1" style="color: aliceblue;">Jelszó Megerősítése</label>
+            <input 
+                type="password" 
+                class="form-control" 
+                id="password2" 
+                name="password2" 
+                placeholder="Erősíts meg a jelszót!"
+            />
+        </div>
+        <br />
+        <center>
+        <button type="submit" class="btn btn-primary" style="background-color: #00ffea; color: black;">Mehet!</button>
+        </center>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Jegyzetfüzet/Bejelentkezés{% endblock %}
+{% block content %}
+<head>
+    <style>
+        .signupdiv{
+            position: absolute;
+            top: 31%;
+            left: 47%;
+        }
+    </style>
+</head>
+<h1 class="foold" style="position: absolute; right: 32%;">Jelentkezz be!</h1>
+<br>
+<div class="signupdiv">
+    <form method="post">
+        <div class="form-group">
+            <label for="email" style="color: aliceblue;">E-Mail cím</label>
+            <input 
+                type="email" 
+                class="form-control" 
+                id="email" 
+                name="email" 
+                placeholder="Add meg az E-Mail címet!"
+            />
+        </div>
+        <div class="form-group">
+            <label for="password" style="color: aliceblue;">Jelszó</label>
+            <input 
+                type="password" 
+                class="form-control" 
+                id="password" 
+                name="password" 
+                placeholder="Add meg a jelszót!"
+            />
+        </div>
+        <br />
+        <center>
+        <button type="submit" class="btn btn-primary" style="background-color: #00ffea; color: black;">Mehet!</button>
+        </center>
+    </form>
+</div>
+{% endblock %}
